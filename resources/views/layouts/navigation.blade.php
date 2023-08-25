@@ -9,7 +9,12 @@
         <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="{{ route('CitiAlert.index') }}">
             <img src="images/logo.svg" alt="CitiAlert" class="h-8"/>
         </a>
-
+        <form class="navbar-collapse offcanvas-collapse ml-3.5 rounded-lg bg-gray-100 p-1 flex items-center">
+            <input type="text" class="py-1 px-2 rounded-l-lg w-40 sm:w-52 focus:outline-none" placeholder="Enter Token">
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white py-1 px-3 rounded-r-lg">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
         <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
         </button>
@@ -28,7 +33,11 @@
                 <li>
                     <a class="nav-link page-scroll" href="{{ route('CitiAlert.index') }}#pricing">Pricing</a>
                 </li>
-                <li class="dropdown">
+                <li>
+                    <a class="nav-link page-scroll" href="{{ route('CitiAlert.article') }}">Article Details</a>
+
+                </li>
+                {{-- <li class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item page-scroll" href="{{ route('CitiAlert.article') }}">Article Details</a>
@@ -37,9 +46,9 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item page-scroll" href="{{ route('CitiAlert.privacy') }}">Privacy Policy</a>
                     </div>
-                </li>
+                </li> --}}
                 <li>
-                    <a class="nav-link page-scroll" href="#download">Download</a>
+                    <a class="nav-link page-scroll" href="{{ route('CitiAlert.index') }}#download">Download</a>
                 </li>
             </ul>
 
@@ -52,6 +61,7 @@
                 </a>
             </span>
         </div> <!-- end of navbar-collapse -->
+
     </div> <!-- end of container -->
 </nav> <!-- end of navbar -->
 <!-- end of navigation -->

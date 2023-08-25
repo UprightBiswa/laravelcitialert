@@ -1,7 +1,9 @@
   <!-- Footer -->
   <div class="footer">
     <div class="container px-4 sm:px-8">
-        <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:email@domain.com">email@domain.com</a>
+        <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">
+            CitiAlert is your ultimate road safety companion. Connect with us at <a
+                class="text-indigo-600 hover:text-gray-500" href="mailto:contact@CitiAlert.com">contact@CitiAlert.com</a>
         </h4>
         <div class="social-container">
             <span class="fa-stack">
@@ -44,15 +46,15 @@
 <div class="copyright">
     <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
         <ul class="mb-4 list-unstyled p-small">
-            <li class="mb-2"><a href="article.html">Article Details</a></li>
             <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
             <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
         </ul>
-        <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Your name</a></p>
-
-        <p class="pb-2 p-small statement">Distributed by :<a href="https://themewagon.com/" class="no-underline">Themewagon</a></p>
+        <p class="pb-2 p-small statement">© 2023 CitiAlert. All rights reserved.</p>
+        <p class="pb-2 p-small statement">Distributed by: <a href="https://www.yourwebsite.com"
+                class="no-underline">Your Website</a></p>
     </div>
 </div> <!-- end of copyright -->
+<!-- end of copyright -->
 <!-- end of copyright -->
 
 <!-- Scripts -->

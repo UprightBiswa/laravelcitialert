@@ -769,7 +769,7 @@ input[type="checkbox"] {
 .cards-2 {
     position: relative;
     padding-top: 8rem;
-    background: linear-gradient(rgba(50, 60, 70, 0.9), rgba(50, 60, 70, 0.9)), url("../images/pricing-background.jpg") center center no-repeat;
+    background: linear-gradient(rgba(70, 61, 50, 0.552), rgba(50, 60, 70, 0.793)), url("../images/conclusion-background.jpg") center center no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -865,7 +865,7 @@ input[type="checkbox"] {
 .basic-5 {
     padding-top: 4.5rem;
     padding-bottom: 7.5rem;
-    background: url("../images/conclusion-background.jpg") center center no-repeat;
+    background: url("../images/wel.png") center center no-repeat;
     background-size: cover;
     text-align: center;
 }
