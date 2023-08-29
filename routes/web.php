@@ -20,7 +20,7 @@ use App\Http\Controllers\GrievanceController;
 // Define the name group and apply it to the routes
 Route::name('CitiAlert.')->group(function () {
     Route::get('/', [IndexController::class, 'index'])->name('index');
-    Route::get('/article', [ArticleController::class, 'index'])->name('article');
+    Route::get('/userGuide', [ArticleController::class, 'index'])->name('userGuide');
     Route::get('/terms', [TermsController::class, 'index'])->name('terms');
     Route::get('/privacy', [PrivacyController::class, 'index'])->name('privacy');
     Route::get('/track', [GrievanceController::class, 'track'])->name('track');

@@ -9,12 +9,12 @@
         <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="{{ route('CitiAlert.index') }}">
             <img src="images/logo.svg" alt="CitiAlert" class="h-8"/>
         </a>
-        <form class="navbar-collapse offcanvas-collapse ml-3.5 rounded-lg bg-gray-100 p-1 flex items-center">
+        {{-- <form class="navbar-collapse offcanvas-collapse ml-3.5 rounded-lg bg-gray-100 p-1 flex items-center">
             <input type="text" class="py-1 px-2 rounded-l-lg w-40 sm:w-52 focus:outline-none" placeholder="Enter Token">
             <button class="bg-indigo-600 hover:bg-indigo-700 text-white py-1 px-3 rounded-r-lg">
                 <i class="fas fa-search"></i>
             </button>
-        </form>
+        </form> --}}
         <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
         </button>
@@ -31,10 +31,10 @@
                     <a class="nav-link page-scroll" href="{{ route('CitiAlert.index') }}#details">Details</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="{{ route('CitiAlert.index') }}#pricing">Pricing</a>
+                    <a class="nav-link page-scroll" href="{{ route('CitiAlert.index') }}#QR">QR Code</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="{{ route('CitiAlert.article') }}">Article Details</a>
+                    <a class="nav-link page-scroll" href="{{ route('CitiAlert.userGuide') }}">User guide</a>
 
                 </li>
                 {{-- <li class="dropdown">

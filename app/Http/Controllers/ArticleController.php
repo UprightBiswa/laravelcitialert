@@ -10,7 +10,7 @@ class ArticleController extends Controller
    // app/Http/Controllers/ArticleController.php
 public function index()
 {
-    return view('pages.article');
+    return view('pages.userGuide');
 }
 
 }

@@ -10,7 +10,7 @@ class GrievanceController extends Controller
 {
     public function track(Request $request)
     {
-        $token = $request->input('token');
+        $token = strtoupper($request->input('token'));
         $apiUrl = "https://grievance.indigidigital.in/api/grievances/findbytoken/$token";
 
         $response = Http::get($apiUrl);

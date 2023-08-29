@@ -9,7 +9,7 @@
                 <p class="p-large mb-8 text-gray-700">Enhancing road safety for a better tomorrow.</p>
                 <p class="wc ed sm:he text-sm text-gray-600 mb-4">
                     Your safety is our priority. Learn more about how we protect your privacy in our
-                    <a href="#0" class="ad cd hover:wd text-blue-600">Privacy Policy.</a>
+                    <a href="{{ route('CitiAlert.privacy') }}" class="ad cd hover:wd text-blue-600">Privacy Policy.</a>
                 </p>
 
                 <!-- Search Box -->
@@ -31,7 +31,7 @@
                 <p class="text-xs text-gray-500 mt-2">Real-time updates for your safety on the road.</p>
             </div>
             <div class="xl:text-right">
-                <img class="inline animate-pulse transform hover:scale-105 transition duration-300" src="images/Img-01.png"
+                <img class="inline  transform hover:scale-105 transition duration-300" src="images/Img-01.png"
                     alt="Smartphone with CitiAlert app" />
             </div>
         </div> <!-- end of container -->
@@ -64,7 +64,7 @@
             <p class="mb-2 text-gray-600 text-lg leading-7 lg:max-w-4xl lg:mx-auto">
                 Explore a new era of road safety. Try CitiAlert today and take the first step towards safer travels!
             </p>
-            <a href="#download" class="btn-solid-reg inline-block px-6 py-3 mt-4 bg-blue-500 text-white hover:bg-blue-600">
+            <a href="{{ route('CitiAlert.index') }}#download" class="btn-solid-reg inline-block px-6 py-3 mt-4 bg-blue-500 text-white hover:bg-blue-600">
                 Download Now
             </a>
         </div> <!-- end of container -->
@@ -179,7 +179,7 @@
             </div> <!-- end of col -->
             <div class="lg:col-span-7">
                 <div class="xl:ml-14">
-                    <img class="inline" src="images/details-1.jpg" alt="alternative" />
+                    <img class="inline" src="{{ asset('images/details-1.png')}}" alt="alternative" />
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of container -->
@@ -193,7 +193,7 @@
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
             <div class="lg:col-span-7">
                 <div class="mb-12 lg:mb-0 xl:mr-14">
-                    <img class="inline" src="images/details-2.jpg" alt="alternative" />
+                    <img class="inline" src="{{ asset('images/details-2.png')}}" alt="alternative" />
                 </div>
             </div> <!-- end of col -->
             <div class="lg:col-span-5">
@@ -230,7 +230,7 @@
             </div> <!-- end of col -->
             <div class="lg:col-span-7">
                 <div class="ml-14">
-                    <img class="inline" src="images/details-3.jpg" alt="alternative" />
+                    <img class="inline" src="{{ asset('images/details-3.png')}}" alt="alternative" />
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of container -->
@@ -283,7 +283,7 @@
     <!-- end of Pricing Problem Section --> --}}
 
     <!-- Pricing -->
-    <div id="pricing" class="cards-2">
+    <div id="QR" class="cards-2">
         <div class="absolute bottom-0 h-40 w-full bg-white"></div>
         <div class="container px-4 pb-px sm:px-8">
             <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">Scan the QR code to report from Whatsapp</h2>
@@ -308,14 +308,14 @@
 
                     </ul>
                     <div class="button-wrapper">
-                        <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
+                        <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-QR">QR CODE</a>
                     </div>
                 </div>
             </div> <!-- end of card -->
             <!-- end of card -->
             <!-- Details Lightbox -->
             <!-- Lightbox -->
-            <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div id="details-QR" class="lightbox-basic zoom-anim-dialog mfp-hide">
                 <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
                     <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
                     <div class="lg:col-span-8">
@@ -324,38 +324,34 @@
                         </div>
                     </div> <!-- end of col -->
                     <div class="lg:col-span-4">
-                        <h3 class="mb-2">Goals Setting</h3>
+                        <h3 class="mb-2">WhatsApp SetUp</h3>
                         <hr class="w-11 h-0.5 mt-0.5 mb-4 ml-0 border-none bg-indigo-600" />
-                        <p>The app can easily help you track your personal development evolution if you take the time to set
-                            it up.
-                        </p>
-                        <h4 class="mt-7 mb-2.5">User Feedback</h4>
-                        <p class="mb-4">This is a great app which can help you save time and make your live easier. And
-                            it will
-                            help improve your productivity.</p>
+                        <p>To use Citialert on your WhatsApp.</p>
+                        <h4 class="mt-7 mb-2.5">Settings</h4>
+                        <p class="mb-4">Chat with Citialert.</p>
                         <ul class="list mb-6 space-y-2">
                             <li class="flex">
                                 <i class="fas fa-chevron-right"></i>
-                                <div>Splash screen panel</div>
+                                <div>Open WhatsApp on your phone.</div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-chevron-right"></i>
-                                <div>Statistics graph report</div>
+                                <div>Tap More options > Settings</div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-chevron-right"></i>
-                                <div>Events calendar layout</div>
+                                <div>Tap the QR code displayed next to your name</div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-chevron-right"></i>
-                                <div>Location details screen</div>
+                                <div>Tap Scan code</div>
                             </li>
                             <li class="flex">
                                 <i class="fas fa-chevron-right"></i>
-                                <div>Onboarding steps interface</div>
+                                <div>Tap OK.</div>
                             </li>
                         </ul>
-                        <a class="btn-solid-reg mfp-close page-scroll" href="#download">Download</a>
+                        <a class="btn-solid-reg mfp-close page-scroll" href="{{ route('CitiAlert.index') }}#download">Download</a>
                         <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -368,7 +364,7 @@
     </div> <!-- end of cards-2 -->
     <!-- end of pricing -->
 
-    <!-- Testimonials -->
+    {{-- <!-- Testimonials -->
     <div class="slider-1 py-32 bg-gray">
         <div class="container px-4 sm:px-8">
             <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">Hear from our satisfied users</h2>
@@ -430,7 +426,7 @@
 
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
-    <!-- end of testimonials -->
+    <!-- end of testimonials --> --}}
     <!-- Conclusion -->
     <div id="download" class="basic-5">
         <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
@@ -440,8 +436,8 @@
             <div class="lg:mt-24 xl:mt-44 xl:ml-12">
                 <p class="mb-9 text-gray-800 text-3xl leading-10">CitiAlert is the ultimate road safety companion. Elevate
                     your road safety experience today.</p>
-                <a class="btn-solid-lg" href="#your-ios-link"><i class="fab fa-apple"></i>Download on the App Store</a>
-                <a class="btn-solid-lg secondary" href="#your-android-link"><i class="fab fa-google-play"></i>Get it on
+                <a class="btn-solid-lg" href="https://www.apple.com/app-store/"><i class="fab fa-apple"></i>Download on the App Store</a>
+                <a class="btn-solid-lg secondary" href="https://play.google.com/store/games?device=windows"><i class="fab fa-google-play"></i>Get it on
                     Google Play Store</a>
             </div>
         </div> <!-- end of container -->

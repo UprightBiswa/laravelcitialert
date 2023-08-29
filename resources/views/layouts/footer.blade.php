@@ -46,12 +46,12 @@
 <div class="copyright">
     <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
         <ul class="mb-4 list-unstyled p-small">
-            <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
-            <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+            <li class="mb-2"><a href="{{ route('CitiAlert.terms') }}">Terms & Conditions</a></li>
+            <li class="mb-2"><a href="{{ route('CitiAlert.privacy') }}">Privacy Policy</a></li>
         </ul>
         <p class="pb-2 p-small statement">© 2023 CitiAlert. All rights reserved.</p>
-        <p class="pb-2 p-small statement">Distributed by: <a href="https://www.yourwebsite.com"
-                class="no-underline">Your Website</a></p>
+        <p class="pb-2 p-small statement">Distributed by: <a href="http://indigiconsulting.com"
+                class="no-underline">Indigi Consulting & Solutions Private Limited</a></p>
     </div>
 </div> <!-- end of copyright -->
 <!-- end of copyright -->

@@ -117,7 +117,7 @@
                 <p class="mb-12">
                     Together with touches of call to action green, the overall landing page design will showcase your app beautifully and will help with convincing visitors to download it from the app stores orange and gray hues with one color backgrounds to maximize the impact of your written and online content.</p>
 
-                <a class="btn-solid-reg mb-12" href="index.html#download">Download</a>
+                <a class="btn-solid-reg mb-12" href="{{ route('CitiAlert.index') }}#download">Download</a>
             </div> <!-- end of container -->
         </div> <!-- end of ex-basic-1 -->
         <!-- end of basic -->

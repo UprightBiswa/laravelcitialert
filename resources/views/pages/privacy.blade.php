@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('main')
            <!-- Header -->
@@ -121,11 +121,43 @@
                 <!-- end of text-box -->
                 <p class="mb-12">Help you showcase your mobile app online and persuade visitors to download it from the app stores. The author used Tailwind CSS to build the template and integrated a nice animated navigation that slides from outside the screen. Features include an eye catching morphtext in the header, details lightbox and other features.</p>
 
-                <a class="btn-solid-reg mb-12" href="index.html#download">Download</a>
+                <a class="btn-solid-reg mb-12" href="{{ route('CitiAlert.index') }}#download">Download</a>
             </div>
             <!-- end of container -->
         </div>
         <!-- end of ex-basic-1 -->
         <!-- end of basic -->
 
+@endsection --}}
+@extends('layouts.app')
+
+@section('main')
+    <!-- Header -->
+    <header class="ex-header bg-gray">
+        <div class="container mx-auto px-4 sm:px-8 xl:max-w-6xl xl:px-4">
+            <h1 class="xl:ml-24">Privacy Policy</h1>
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+    <!-- Privacy Policy Content -->
+    <div class="ex-basic-1 py-12">
+        <div class="container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12">
+            <h2 class="mt-12 mb-4">1. Your Privacy Matters to Us</h2>
+            <p class="mb-12">At CitiAlert, we are committed to safeguarding your privacy and ensuring your personal data is protected. This Privacy Policy outlines how we collect, use, and manage your information when you interact with our website and services.</p>
+
+            <h2 class="mb-4">2. Data Collection and Usage</h2>
+            <p class="mb-12">We collect various types of information to provide and improve our services. This includes your IP address, browser type, access times, and more. When you create an account or make purchases, we may collect additional information, such as billing details.</p>
+
+            <!-- Continue with the remaining sections of your Privacy Policy -->
+
+            <h2 class="mb-4">3. Your Choices</h2>
+            <p class="mb-12">You have the right to access, update, or delete your personal information. You can manage your preferences for communications and notifications. By using our services, you consent to the practices described in this Privacy Policy.</p>
+
+            <a class="btn-solid-reg mb-12" href="{{ route('CitiAlert.index') }}#download">Download</a>
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
 @endsection
